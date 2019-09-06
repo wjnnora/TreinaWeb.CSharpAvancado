@@ -1,0 +1,7 @@
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\bin\Debug\CovarianciaContravariancia.exe.config
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\bin\Debug\CovarianciaContravariancia.exe
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\bin\Debug\CovarianciaContravariancia.pdb
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\obj\Debug\CovarianciaContravariancia.csprojAssemblyReference.cache
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\obj\Debug\CovarianciaContravariancia.csproj.CoreCompileInputs.cache
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\obj\Debug\CovarianciaContravariancia.exe
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\CovarianciaContravariancia\obj\Debug\CovarianciaContravariancia.pdb
