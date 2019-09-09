@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace CovarianciaContravariancia
 {
-    interface IRecuperador<out T>
+    public class Nivel2 : Nivel1
     {
-        T Recuperador(int id);
     }
 }

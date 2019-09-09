@@ -46,6 +46,9 @@
     <Compile Include="IArmazenador.cs" />
     <Compile Include="IRecuperador.cs" />
     <Compile Include="ManipuladorFTP.cs" />
+    <Compile Include="Nivel1.cs" />
+    <Compile Include="Nivel2.cs" />
+    <Compile Include="Nivel3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

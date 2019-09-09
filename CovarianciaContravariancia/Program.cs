@@ -8,26 +8,17 @@ namespace CovarianciaContravariancia
 {
     public class Program
     {
-        static void Main(string []args)
+        static void Main(string[] args)
         {
-            ManipuladorFTP<string> manipuladorFTP = new ManipuladorFTP<string>();
-            manipuladorFTP.Armazenador("wellington_nora94@hotmail.com");
-            manipuladorFTP.Armazenador("welintonnora@gmail.com");
+            ManipuladorFTP<Nivel2> ftp = new ManipuladorFTP<Nivel2>();
 
-            Console.WriteLine(manipuladorFTP.Recuperador(1));
+            IArmazenador<Nivel3> armazenador = ftp;
+            IRecuperador<Nivel1> recuperador = ftp;
 
-            Console.ReadKey();
+            armazenador.Armazenador(new Nivel3());
 
-            Object pessoa = new 
-            {
-                Nome = "Wellington Junior Nora",
-                Idade = 24
-            };
-
-            var nome = pessoa.GetType().GetProperty("Nome") != null ? pessoa.GetType().GetProperty("Nome").GetValue(pessoa, null) : "";
-            var idade = pessoa.GetType().GetProperty("Idade") != null ? pessoa.GetType().GetProperty("Idade").GetValue(pessoa, null) : "";
-
-            Console.WriteLine($"O Sr. {nome} tem {idade} de idade");
+            Console.WriteLine(recuperador.Recuperador(0));
+            
             Console.ReadKey();
         }
     }

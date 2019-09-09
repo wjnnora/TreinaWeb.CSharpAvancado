@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CovarianciaContravariancia
 {
-    interface IArmazenador<T>
+    interface IArmazenador<in T>
     {
         void Armazenador(T item);
     }
