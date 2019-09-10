@@ -1,0 +1,7 @@
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\obj\Debug\MeusTestes.csprojAssemblyReference.cache
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\obj\Debug\MeusTestes.csproj.CoreCompileInputs.cache
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\bin\Debug\MeusTestes.exe.config
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\bin\Debug\MeusTestes.exe
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\bin\Debug\MeusTestes.pdb
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\obj\Debug\MeusTestes.exe
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\MeusTestes\obj\Debug\MeusTestes.pdb

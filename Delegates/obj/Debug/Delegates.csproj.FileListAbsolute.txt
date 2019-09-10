@@ -1,0 +1,7 @@
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\bin\Debug\Delegates.exe
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\bin\Debug\Delegates.pdb
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\obj\Debug\Delegates.csprojAssemblyReference.cache
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\obj\Debug\Delegates.exe
+C:\Users\welli\source\repos\TreinaWeb.CSharpAvancado\Delegates\obj\Debug\Delegates.pdb
