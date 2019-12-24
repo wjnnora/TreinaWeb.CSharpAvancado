@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace FuncActions
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
             //Trabalhando com delegates
             ExecutorCalculos<decimal> ec = new ExecutorCalculos<decimal>(new Program().Multiplicar);
-            ec(1.2M, 10M);
+            ec(1.2M, 10M);           
 
             //Utilizando Funcs
             Func<decimal, decimal, decimal> exD = new Func<decimal, decimal, decimal>(new Program().Multiplicar);
@@ -25,6 +25,9 @@ namespace FuncActions
             //Utilizando Actions
             Action a1 = new Program().ImprimeQualquerCoisa;
             Action<string> a2 = new Program().TesteAction;
+
+            Console.WriteLine(exD.Target);
+            Console.WriteLine(exD.Method);
 
             a1();
             a2(exS(1.3, 1.15));
