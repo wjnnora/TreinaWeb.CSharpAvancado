@@ -8,13 +8,13 @@ namespace MeusTestes
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public void Main(string[] args)
         {
 
             int soma1 = Soma(2, 2);
             int subtrair1 = Subtrair(4, 1);
             int dividir1 = Dividir(3, 1);
-            int multiplicar1 = Multiplicar(22, 2);
+            int multiplicar1 = Multiplicar(2, 2);
 
             var executar = new MeusDelegates.ExecutarCalculo(Soma);
             int somar2 = executar(2, 2);
@@ -45,22 +45,22 @@ namespace MeusTestes
 
         }
 
-        public static int Soma(int num1, int num2)
+        public int Soma(int num1, int num2)
         {
             return num1 + num2;
         }
 
-        public static int Subtrair(int num1, int num2)
+        public int Subtrair(int num1, int num2)
         {
             return num1 - num2;
         }
 
-        public static int Dividir(int num1, int num2)
+        public int Dividir(int num1, int num2)
         {
             return num1 / num2;
         }
 
-        public static int Multiplicar(int num1, int num2)
+        public int Multiplicar(int num1, int num2)
         {
             return num1 * num2;
         }
