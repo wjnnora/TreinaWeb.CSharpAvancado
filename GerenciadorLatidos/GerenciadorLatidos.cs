@@ -9,8 +9,7 @@ namespace GerenciadorLatidos
     public class GerenciadorLatidos
     {
         private int _intensidadeLatido;
-        public delegate void ExcessoDecibeisHandler(object obj, EventArgs e);
-        public event ExcessoDecibeisHandler ExcessoDecibeisEvent;
+        public EventHandler ExcessoDecibeisEvent;
 
         public GerenciadorLatidos()
         {
@@ -29,10 +28,11 @@ namespace GerenciadorLatidos
 
         protected virtual void OnExcessoDecibeis(EventArgs e)
         {
-            if (ExcessoDecibeisEvent != null)
-            {
-                ExcessoDecibeisEvent(this, e);
-            }
+            //if (ExcessoDecibeisEvent != null)
+            //{
+            //    ExcessoDecibeisEvent(this, e);
+            //}
+            ExcessoDecibeisEvent?.Invoke(this, e);
         }
     }
 }

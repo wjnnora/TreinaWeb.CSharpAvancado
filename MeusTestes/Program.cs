@@ -3,67 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace MeusTestes
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
+            //Arvore de expressao 
+            ParameterExpression pe = Expression.Parameter(typeof(int), "num");
+            ConstantExpression ce = Expression.Constant(5, typeof(int));
+            BinaryExpression be = Expression.LessThan(ce, pe);
 
-            int soma1 = Soma(2, 2);
-            int subtrair1 = Subtrair(4, 1);
-            int dividir1 = Dividir(3, 1);
-            int multiplicar1 = Multiplicar(2, 2);
+            Expression<Func<int, bool>> lambda1 = Expression.Lambda<Func<int, bool>>(be, new ParameterExpression[] { pe });
 
-            var executar = new MeusDelegates.ExecutarCalculo(Soma);
-            int somar2 = executar(2, 2);
+            Func<int, bool> result = lambda1.Compile();
 
-            executar = new MeusDelegates.ExecutarCalculo(Subtrair);
-            int subtrair2 = executar(2, 2);
+            bool teste = result(10);
 
-            executar = new MeusDelegates.ExecutarCalculo(Dividir);
-            int dividir2 = executar(2, 2);
+            Console.WriteLine(teste);
 
-            executar = new MeusDelegates.ExecutarCalculo(Multiplicar);
-            int multiplicar2 = executar(2, 2);
+            //Utiliza lambda no delegate com uma função anônima
+            Func<int, int, double> teste1 = (num1, num2) => Math.Pow(num1, num2);
+            Func<int, string> teste2 = num1 => num1 > 10 ? "O número é maior que 10" : "O número é menor do que 10";
 
-            Console.WriteLine("Resultado Soma1 : " + soma1);
-            Console.WriteLine("Resultado Subtrair1 : " + subtrair1);
-            Console.WriteLine("Resultado Dividir1 : " + dividir1);
-            Console.WriteLine("Resultado Multiplicar1 : " + multiplicar1);
+            Console.WriteLine($"Resultado da exponenciação: {teste1(2, 5)}");
+            Console.WriteLine(teste2(9));
 
-            Console.WriteLine("\n\n");
-
-            Console.WriteLine("Resultado Soma1 : " + somar2);
-            Console.WriteLine("Resultado Subtrair1 : " + subtrair2);
-            Console.WriteLine("Resultado Dividir1 : " + dividir2);
-            Console.WriteLine("Resultado Multiplicar1 : " + multiplicar2);
-
+            Action<int, int> act = (num1, num2) =>
+            {
+                double result = Math.Pow(num1, num2);
+                Console.WriteLine(string.Format("Resultado: {0}", result));
+            };
+            act(10, 10);
+            
             Console.ReadKey();
-
-
         }
 
-        public int Soma(int num1, int num2)
-        {
-            return num1 + num2;
-        }
-
-        public int Subtrair(int num1, int num2)
-        {
-            return num1 - num2;
-        }
-
-        public int Dividir(int num1, int num2)
-        {
-            return num1 / num2;
-        }
-
-        public int Multiplicar(int num1, int num2)
-        {
-            return num1 * num2;
-        }
+        
         
     }
 }
